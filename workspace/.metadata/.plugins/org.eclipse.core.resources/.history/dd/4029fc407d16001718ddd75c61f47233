@@ -1,0 +1,34 @@
+package com.selenium.pom.testcases;
+
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.selenium.pom.pages.LaunchPage;
+import com.selenium.pom.pages.LoginPage;
+import com.selenium.pom.pages.session.LandingPage;
+import com.selenium.pom.pages.session.ProfilePage;
+import com.selenium.pom.testcases.base.BaseTest;
+
+public class ProfileTest extends BaseTest{
+	
+	@Test
+	public void testProfile(){
+		init("Mozilla");
+		LaunchPage launchPage = PageFactory.initElements(driver, LaunchPage.class);
+		LoginPage loginPage = launchPage.gotoLoginPage();
+		Object objectPage = loginPage.doLogin("nagaraj_sammeta@yahoo.com", "vinaysrinu1");
+		
+		if(objectPage instanceof LoginPage)
+			Assert.fail("Login Unsuccessful");
+		else if(objectPage instanceof LandingPage)
+			System.out.println("Login is successful");
+		
+		LandingPage landingPage = (LandingPage)objectPage;
+		
+		ProfilePage profilePage = landingPage.gotoProfilePage();
+		profilePage.verifyProfile();
+		profilePage.getMenu().logOut();
+	}
+
+}

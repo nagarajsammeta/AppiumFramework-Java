@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteName]" parallel="tests">
+  <test name="Profile Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.selenium.pom.testcases.ProfileTest">
+        <methods>
+          <include name="testProfile"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.selenium.pom.testcases.ProfileTest -->
+      <class name="com.selenium.pom.testcases.LoginTest">
+        <methods>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.selenium.pom.testcases.LoginTest -->
+      <class name="com.selenium.pom.testcases.ChangePasswordTest">
+        <methods>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.selenium.pom.testcases.ChangePasswordTest -->
+    </classes>
+  </test> <!-- Profile Test(failed) -->
+</suite> <!-- Failed suite [SuiteName] -->

@@ -1,0 +1,22 @@
+package com.selenium.pom.testcases;
+
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import com.selenium.pom.pages.LaunchPage;
+import com.selenium.pom.pages.LoginPage;
+import com.selenium.pom.testcases.base.BaseTest;
+import com.selenium.pom.util.ExtentManager;
+
+public class LoginTest extends BaseTest {
+	
+	@Test
+	public void testProfile(){
+		ExtentManager.getInstance();
+		init("Mozilla");
+		LaunchPage launchPage = PageFactory.initElements(driver, LaunchPage.class);
+		LoginPage loginPage = launchPage.gotoLoginPage();
+		loginPage.doLogin("nagaraj_sammeta@yahoo.com", "vinaysrinu1");
+	}
+
+}

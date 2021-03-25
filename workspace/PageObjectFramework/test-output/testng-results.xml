@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SuiteName" duration-ms="50493" started-at="2017-04-16T06:32:01Z" finished-at="2017-04-16T06:32:52Z">
+    <groups>
+    </groups>
+    <test name="Change Password Test" duration-ms="25575" started-at="2017-04-16T06:32:01Z" finished-at="2017-04-16T06:32:27Z">
+      <class name="com.selenium.pom.testcases.ChangePasswordTest">
+        <test-method status="PASS" signature="changePasswordTest(java.util.Hashtable)[pri:0, instance:com.selenium.pom.testcases.ChangePasswordTest@38afe297]" name="changePasswordTest" duration-ms="25237" started-at="2017-04-16T16:32:01Z" data-provider="getData" finished-at="2017-04-16T16:32:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{NewPassword=rishika123, Username=nagaraj_sammeta@yahoo.com, OldPassword=vinaysrinu123, ExpectedResult=Success, Runmode=Y, Browser=Mozilla}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePasswordTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.pom.testcases.ChangePasswordTest@38afe297]" name="quit" is-config="true" duration-ms="323" started-at="2017-04-16T16:32:27Z" finished-at="2017-04-16T16:32:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.selenium.pom.testcases.ChangePasswordTest -->
+    </test> <!-- Change Password Test -->
+    <test name="Profile Test" duration-ms="44024" started-at="2017-04-16T06:32:01Z" finished-at="2017-04-16T06:32:46Z">
+      <class name="com.selenium.pom.testcases.ProfileTest">
+        <test-method status="FAIL" signature="testProfile()[pri:0, instance:com.selenium.pom.testcases.ProfileTest@2cd76f31]" name="testProfile" duration-ms="43733" started-at="2017-04-16T16:32:01Z" finished-at="2017-04-16T16:32:45Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Unsuccessful]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Unsuccessful
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.selenium.pom.testcases.ProfileTest.testProfile(ProfileTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProfile -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.pom.testcases.ProfileTest@2cd76f31]" name="quit" is-config="true" duration-ms="284" started-at="2017-04-16T16:32:45Z" finished-at="2017-04-16T16:32:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.selenium.pom.testcases.ProfileTest -->
+    </test> <!-- Profile Test -->
+    <test name="Login Test" duration-ms="50493" started-at="2017-04-16T06:32:01Z" finished-at="2017-04-16T06:32:52Z">
+      <class name="com.selenium.pom.testcases.LoginTest">
+        <test-method status="PASS" signature="testLogin(java.util.Hashtable)[pri:0, instance:com.selenium.pom.testcases.LoginTest@4c12331b]" name="testLogin" duration-ms="22078" started-at="2017-04-16T16:32:01Z" data-provider="getData" finished-at="2017-04-16T16:32:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=nagaraj_sammeta@yahoo.com, ExpectedResult=Success, Password=vinaysrinu123, Runmode=Y, Browser=Mozilla}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.pom.testcases.LoginTest@4c12331b]" name="quit" is-config="true" duration-ms="565" started-at="2017-04-16T16:32:24Z" finished-at="2017-04-16T16:32:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="testLogin(java.util.Hashtable)[pri:0, instance:com.selenium.pom.testcases.LoginTest@4c12331b]" name="testLogin" duration-ms="27070" started-at="2017-04-16T16:32:24Z" data-provider="getData" finished-at="2017-04-16T16:32:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=nagaraj_sammeta@yahoo.com, ExpectedResult=Unsuccessful, Password=xxxxxxx, Runmode=Y, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.selenium.pom.testcases.LoginTest@4c12331b]" name="quit" is-config="true" duration-ms="764" started-at="2017-04-16T16:32:51Z" finished-at="2017-04-16T16:32:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.selenium.pom.testcases.LoginTest -->
+    </test> <!-- Login Test -->
+  </suite> <!-- SuiteName -->
+</testng-results>
